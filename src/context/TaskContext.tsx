@@ -31,8 +31,8 @@ export const TaskContext = createContext<TaskContextProps | undefined>(
 export const TaskProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const [tasks, setTasks] = useState<Task[]>([]);
     const [darkMode, setDarkMode] = useState<boolean>(false);
-    const API_URL = "http://localhost:5000/api/tasks";
-  
+    const API_URL = "https://my-task-manager-api.vercel.app";
+    axios.defaults.withCredentials =true
     useEffect(() => {
       axios
         .get(API_URL)
