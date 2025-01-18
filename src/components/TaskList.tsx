@@ -31,7 +31,7 @@ const TaskList: React.FC<TaskListProps> = ({
   >("All");
 
   const API_URL = "https://my-task-manager-api.vercel.app";
-  axios.defaults.WithCredentials = true;
+  axios.defaults.withCredentials = true;
 
   const handleEdit = (task: Task) => {
     setIsEditing(true);
