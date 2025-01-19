@@ -30,7 +30,7 @@ const TaskList: React.FC<TaskListProps> = ({
     "Work" | "Personal" | "Urgent" | "All"
   >("All");
 
-  const API_URL = "https://my-task-manager-api.vercel.app";
+  const API_URL = "https://my-task-manager-api.vercel.app/api";
   
 
   const handleEdit = (task: Task) => {
